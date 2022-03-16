@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerse|Web Devlopment</title>
+    <style>
+        html{
+            background-color:black;
+        }
+        h1{
+            font-size:40px;
+            text-align:center;
+            font-style:italic;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow:3px 3px 4px black;  
+        }
+        header{
+            background-color:whitesmoke;
+            padding:60px;
+            border-radius:15px;
+        }
+        h3{
+            font-size:35px;
+        }
+        h4{
+            font-size:large;
+        }
+        h3,h4,div{
+            color:white;
+        }
+        .com{
+            color:white;
+            background-color: gray;
+            border-radius:20px;
+            padding:20px;
+            font-size:20px;
+            width:50%;
+        }
+        .body{
+            margin-left:60px;
+        }
+        li{
+            font-size:20px;
+        }
+        
+    </style>
+    <header>
+
+        <h1 class="hover">Web Devlopment</h1>
+    </header>
+</head>
+<body>
+    <div class="body">
+    <h3>Mern Stack</h3>
+    <h4>Mongo DB</h4>
+    <div><ul>
+        <li>Fast – Being a document-oriented database, easy to index documents. Therefore a faster response.</li>
+        <li>Scalability – Large data can be handled by dividing it into several machines.</li>
+       <li> Use of JavaScript – MongoDB uses JavaScript which is the biggest advantage.</li>
+       <li>Schema Less – Any type of data in a separate document.</li>
+       <li>Data stored in the form of JSON – </li>
+        <ol>
+            <li>Objects, Object Members, Arrays, Values, and Strings</li>
+            <li>JSON syntax is very easy to use.</li>
+            <li>JSON has a wide range of browser compatibility.</li>
+            <li>Sharing Data: Data of any size and type(video, audio) can be shared easily.</li>
+        </ol>
+        <li>Simple Environment Setup – Its really simple to set up MongoDB.</li>
+        <li>Flexible Document Model – MongoDB supports document-model(tables, schemas, columns & SQL) which is faster and easier.</li>
+        <li>Creating a database: Simply done using a “use” command:</li>
+    </ul></div>
+    <p class="com">use database_name;</p>
+    <div><ul><li>Creating a table: If the collection/table doesn’t exist then a new collection/table will be created:</li></ul></div>
+    <p class="com">db.createCollection("collection_name);</p>
+    <div><ul><li>Inserting records into the collection:</li></ul></div>
+    <pre class="com">
+        db.collection_name.insert
+        (
+
+            {
+                "id" : 1,
+                "Name" : "Klaus",
+                        "Department": "Technical",
+                        "Organization": "Geeks For Geeks"
+            }
+        );
+    </pre>
+    <ul>
+        <li>Querying a document:</li>
+    </ul>
+    <p class="com">db.collection_name.find({Name : "Klaus"}).forEach(printjson);</p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191004124452/3710.png" alt="image of code" width="33%">
+</div>
+</body>
+</html>
